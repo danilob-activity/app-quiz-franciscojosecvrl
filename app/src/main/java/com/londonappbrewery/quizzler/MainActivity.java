@@ -2,6 +2,7 @@ package com.londonappbrewery.quizzler;
 
 import android.app.Activity;
 import android.os.Bundle;
+
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -10,6 +11,7 @@ public class MainActivity extends Activity {
 
 
     // TODO: Declare member variables here:
+
     Button mTrueButton;
     Button mFalseButton;
     TextView mScoreTextView;
@@ -37,10 +39,12 @@ public class MainActivity extends Activity {
             new TrueFalse(R.string.question_13,true)
     };
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         mTrueButton = findViewById(R.id.true_button);
         mFalseButton = findViewById(R.id.false_button);
@@ -78,12 +82,9 @@ public class MainActivity extends Activity {
                 mScore++;
             Toast.makeText(getApplicationContext(),R.string.correct_toast, Toast.LENGTH_LONG).show();
             } else{
-                Toast.makeText()
+                //Toast.makeText()
             }
     }
 
 
-
-
-    }
 }
